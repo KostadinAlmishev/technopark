@@ -1,4 +1,30 @@
 ## C/C++
+.idea
+*.iws
+cmake-build-*/
+out/
+.idea-modules/
+atlasian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+.gradle/
+gradle/
+build/
+
+# C++
+cmake-build-debug
+
+# npm
+node_modules
+build
+npm-debug.log
+.env
+.DS_Store
 
 # Prerequisites
 *.d
@@ -95,3 +121,36 @@ typings/
 
 # dotenv environment variables file
 .env
+
+## JAVA Intellij
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/
