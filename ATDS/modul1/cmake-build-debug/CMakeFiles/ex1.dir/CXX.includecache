@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/k/Desktop/repos/technopark/ATDS/modul1/ex1/main.cpp
+iostream
+-
+climits
+-
+cassert
+-
+

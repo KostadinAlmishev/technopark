@@ -1,0 +1,51 @@
+.wrapper {
+    display: grid;
+    grid-template-areas: 'header header' 
+                         'content sider';
+
+    height: 100vh;
+    grid-template-columns: 3fr 1fr ;
+    grid-template-rows: 1fr 10fr;
+    
+}
+
+.header {
+    grid-area: header;
+    border: 1px solid red;
+}
+
+.sider {
+    grid-area: sider;
+    border: 1px solid red;
+    padding: 1rem;
+
+}
+
+.content {
+    grid-area: content;
+    border: 1px solid red;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.tag {
+    margin: .1rem;
+}
+
+.pagination {
+//    position: absolute;
+//    bottom: 0;
+    align-self: flex-end;
+    margin: 2rem;
+    margin-bottom: 10rem;
+}
+
+.search {
+    width: 40rem;
+    position: inline;
+}
+
+.menu {
+    position: inline;
+}
