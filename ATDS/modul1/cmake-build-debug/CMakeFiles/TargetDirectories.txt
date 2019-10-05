@@ -1,2 +1,0 @@
-/home/k/Desktop/repos/technopark/ATDS/modul1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/k/Desktop/repos/technopark/ATDS/modul1/cmake-build-debug/CMakeFiles/edit_cache.dir
