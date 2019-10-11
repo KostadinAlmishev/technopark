@@ -29,7 +29,6 @@ export default class Dev extends Component {
             <div className={ styles.wrapper} >
                 <div className={ styles.header }>
                     <Menu
-                        inlineIndent
                         className={ styles.menu }
                         mode='horizontal'
                     >
@@ -40,8 +39,9 @@ export default class Dev extends Component {
                     <Input.Search
                         className={ styles.search }
                         placeholder='Inter search text'
-                        onSearce={ value => console.log(value) }
+                        onSearch={ value => console.log(value) }
                     />
+                    <div className={ styles.profile }>Profile Dif</div>
                 </div>
                 <div className={ styles.content }>
                     <QuestionCard />

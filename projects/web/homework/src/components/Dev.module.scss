@@ -11,19 +11,30 @@
 
 .header {
     grid-area: header;
-    border: 1px solid red;
+    display: flex;
+
+    .profile {
+        border: 1px solid red;
+
+    }
 }
+
+.search {
+    width: 40rem;
+}
+
+.menu {
+}
+
 
 .sider {
     grid-area: sider;
-    border: 1px solid red;
     padding: 1rem;
 
 }
 
 .content {
     grid-area: content;
-    border: 1px solid red;
     padding: 3rem;
     display: flex;
     flex-direction: column;
@@ -39,13 +50,4 @@
     align-self: flex-end;
     margin: 2rem;
     margin-bottom: 10rem;
-}
-
-.search {
-    width: 40rem;
-    position: inline;
-}
-
-.menu {
-    position: inline;
 }

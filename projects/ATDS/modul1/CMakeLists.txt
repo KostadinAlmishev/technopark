@@ -9,9 +9,9 @@ set(CMAKE_CXX_STANDARD 11)
 #add_executable(ex2
 #        ex2/main.cpp
 #        )
-#add_executable(ex3
-#        ex3/main.cpp
-#        )
+add_executable(ex3
+        ex3/main.cpp
+        )
 #add_executable(ex4
 #        ex4/main.cpp
 #        )

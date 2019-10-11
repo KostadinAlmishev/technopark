@@ -5,6 +5,8 @@ import {
     Button,
     Avatar,
     Tag,
+    Statistic,
+    Icon,
 } from 'antd';
 
 
@@ -28,9 +30,14 @@ export default class QuestionCard extends Component {
                 />
                 <div className={ styles.cardContent}>
                     Guys, i have trouble with a moon park.
-                    Can't find th black-jack...
+                    Can't find the black-jack...
                 </div>
                 <div className={ styles.cardLastLine }>
+                    <Statistic
+                        className={ styles.likes }
+                        title="Likes" value={1128}
+                        prefix={<Icon type="like" />}
+                    />
                     <Button.Group>
                         <Button type='primary' icon='dislike'>Dislike</Button>
                         <Button type='danger' icon='like'>Like</Button>
