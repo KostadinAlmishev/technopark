@@ -1,0 +1,18 @@
+sudo: true
+dist: bionic
+os: linux
+install: sudo apt-get install -qq valgrind
+
+languages:
+  - c
+  - c++
+
+compiler:
+  - g++
+
+script:
+  - bash ci/build_stage
+  - bash ci/run_unit_tests_stage
+
+notifications:
+  email: false
