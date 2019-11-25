@@ -21,7 +21,7 @@ private:
     const size_t _MIN_SIZE_PERCENTAGE = 20; // 20%
 
     bool _triggerResizeUp() {
-        return _curr == _size;
+        return _curr + 1 == _size;
     }
 
     bool _triggerResizeDown() {
@@ -30,10 +30,7 @@ private:
 
         size_t newSize = _size * _RESIZE_UP_COEF;
         // Size can not be less than initial size
-        if (newSize < _INITIAL_SIZE)
-            return false;
-
-        return true;
+        return newSize >= _INITIAL_SIZE;
     }
 
     void _resizeUp() {
@@ -97,7 +94,7 @@ public:
         return _buffer[_curr--];
     }
 
-    bool isEmpty() {
+    bool isEmpty() const {
         return _curr < 0;
     }
 };
@@ -118,8 +115,11 @@ public:
             // exception ??
         }
 
-        while (!_inStack.isEmpty())
-            _outStack.push(_inStack.pop());
+        if (_outStack.isEmpty()) {
+            while (!_inStack.isEmpty()) {
+                _outStack.push(_inStack.pop());
+            }
+        }
 
         return _outStack.pop();
     }
@@ -138,11 +138,10 @@ int main() {
     bool flag = true;
 
     for (size_t i = 0; i < n; i++) {
-        int cmd, num;
+        int cmd = 0, num = 0;
+
         cin >> cmd;
-
         cin >> num;
-
 
         if (cmd == 2) { // pop
             if (queue.isEmpty()) {
@@ -160,7 +159,7 @@ int main() {
         } else if (cmd == 3) { // push
             queue.enqueue(num);
         } else {
-                return -1;
+            return -1;
         }
     }
 
